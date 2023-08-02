@@ -1,0 +1,33 @@
+@media (max-width: 991px){
+    header{
+        width: 100%;
+        height: auto;
+        background: #FDE200;
+        background: -moz-linear-gradient(left, #FDE200 0%, #3A5F7B 76%, #013781 100%);
+        background: -webkit-linear-gradient(left, #FDE200 0%, #3A5F7B 76%, #013781 100%);
+        background: linear-gradient(to right, #FDE200 0%, #3A5F7B 76%, #013781 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header_container{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .logo{
+        width: 50%;
+        height: auto;
+        padding: 1em;
+    }
+    .logo-png{
+        width: 100%;
+    }
+    .menu-btn{
+        display: block;
+        padding: 1em;
+        border: none;
+        cursor: pointer; 
+    }
+    
+}

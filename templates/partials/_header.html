@@ -1,4 +1,21 @@
 {% load static %}
 <header>
-    <h1>This is a header</h1>
+    <div class="header_container">
+        <section class="logo">
+            <img src="{% static 'assets/logo_piemonte.png' %}" alt="Logo Piemonte" class="logo-png">
+        </section>
+    </div>
+    <section class="links">
+        <div class="dropdown">
+            <button class="menu-btn">MENU</button>
+                <div class="dropdownContent" id="myDropdown">
+                    <a href="" class="link">home</a>
+                    <a href="" class="link">empréstimos</a>
+                    <a href="" class="link">consórcios</a>
+                    <a href="" class="link">produtos</a>
+                    <a href="" class="link">localização</a>
+                    <a href="" class="link">contato</a>
+                </div>
+        </div>
+    </section>
 </header>
