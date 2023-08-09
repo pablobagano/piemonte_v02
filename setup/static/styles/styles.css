@@ -35,19 +35,61 @@ header{
 .menu-btn{
     display: none;
 }
+.menu-icon{
+    display: none;
+}
 .dropdownContent{ 
     box-sizing: border-box;
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 1em;
+    padding: 2em;
 }
 .link{
-    font-size: 110%;
+    font-size: 120%;
     align-self: center;
     font-family: 'Inter', sans-serif;
     text-decoration: none;
-    color: antiquewhite;
+    color: antiquewhite; 
     text-transform: uppercase;
     object-fit: contain;
-    margin-right: 0.7rem;
+    margin: 1rem;
+    
+}
+.link:hover{
+    transform: scale(1.2);
+    font-weight: bold;
+}
+.home1{ 
+    background-color: #013781;
+    display: flex;
+}
+h1 { 
+    color: antiquewhite;
+    text-transform: uppercase;
+    font-family: 'Rowdies', cursive; 
+    font-size: 4rem;
+    text-align: center;
+    margin: 1rem;
+}
+.text1{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+    padding: 5rem;
+}
+.text1 p{
+    font-size: 1.5rem;
+    color: antiquewhite;
+    /* text-shadow: -1px -1px 5px rgba(117,90,18,0.25); */
+    text-transform: uppercase;
+    text-align: left; 
+    font-family: 'Inter', sans-serif;
+    line-height: 2rem;
+    margin: 0.7rem;
+    margin-right: 2rem;
+    margin-left: 4rem; 
 }

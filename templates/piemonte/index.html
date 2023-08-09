@@ -1,7 +1,18 @@
 {% extends "piemonte/base.html" %}
 {% load static %}
 {% block content %}
-  <div class="index">
-    <h1>This is the index</h1>
-  </div>
+    <div class="home1">
+      <section class="text1">
+          <h1>Apoio para você</h1>
+          <br>
+          <p>No Grupo Piemonte acreditamos que a vida é feita de pequenas conquistas a cada dia.</p>
+          <p>Sua conquista é a realização de um sonho? Ou talvez poder sair do sufoco?</p> 
+          <p>Fale com um de nossos consultores para podermos te ajudar!</p>
+      </section>
+      <section class="homepic1">
+          <a href="{% url 'index' %}">
+              <img src="{% static 'assets/home1.png' %}" alt="" class="pic1">
+          </a>
+      </section>
+   </div>
 {% endblock content %}

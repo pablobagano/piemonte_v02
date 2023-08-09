@@ -14,9 +14,8 @@
 </head>
 <body>
     {% include "partials/_header.html" %}
-    <main>
-        {% block content %}{% endblock content %}
-    </main>
+    {% block content %}
+    {% endblock content %}
     {% include "partials/_footer.html" %}
     <script src="{% static 'scripts/main.js' %}"></script>
 </body>

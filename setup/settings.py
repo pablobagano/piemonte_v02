@@ -40,9 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'piemonte.apps.PiemonteConfig',
-    'phonenumber_field',
-    'widget_tweaks'
+    'piemonte.apps.PiemonteConfig'
+    # 'phonenumber_field',
+    # 'widget_tweaks'
 ]
 
 MIDDLEWARE = [

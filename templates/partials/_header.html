@@ -2,14 +2,14 @@
 <header>
     <div class="header_container">
         <section class="logo">
-            <img src="{% static 'assets/logo_piemonte.png' %}" alt="Logo Piemonte" class="logo-png">
+            <a href="{% url 'index' %}"><img src="{% static 'assets/logo_piemonte.png' %}" alt="Logo Piemonte" class="logo-png"></a>
         </section>
     </div>
     <section class="links">
         <div class="dropdown">
-            <button class="menu-btn">MENU</button>
+            <button  onclick="menu()" class="menu-btn"><img src="{% static 'assets/menu.png' %}" alt="menu" class="menu-icon">MENU</button>
                 <div class="dropdownContent" id="myDropdown">
-                    <a href="" class="link">home</a>
+                    <a href="{% url 'index' %}" class="link">home</a>
                     <a href="" class="link">empréstimos</a>
                     <a href="" class="link">consórcios</a>
                     <a href="" class="link">produtos</a>
