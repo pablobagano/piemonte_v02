@@ -18,8 +18,8 @@ header{
     padding: 1em;
 }
 .logo-png{
-    width: 100%;
-    flex-grow: 3;
+    width: 90%;
+    /* flex-grow: 3; */
 }
 .lins{
     display: flex;
@@ -68,7 +68,7 @@ h1 {
     color: antiquewhite;
     text-transform: uppercase;
     font-family: 'Rowdies', cursive; 
-    font-size: 4rem;
+    font-size: 5rem;
     text-align: center;
     margin: 1rem;
 }
@@ -92,4 +92,35 @@ h1 {
     margin: 0.7rem;
     margin-right: 2rem;
     margin-left: 4rem; 
+}
+.homepic1{
+    width: 50%;
+}
+.pic1{
+    width: 100%;
+}
+.footer-grid{
+    
+    background: #144378;
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+.footer-grid p{
+    color: antiquewhite;
+    font-family: 'Roboto', sans-serif;
+    /* font-weight: bold; */
+    text-transform: uppercase;
+    margin: 0.3rem;
+}
+.ig-logo{
+    transform: scale(0.8);
+    transform: translate(0rem, 0.3rem); 
+}
+.ig-line{
+    transform: translate(0rem, -0.4rem); 
 }
