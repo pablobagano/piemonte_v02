@@ -7,27 +7,20 @@ header{
     background: linear-gradient(to right, #FDE200 0%, #3A5F7B 76%, #013781 100%);
     display: flex;
 }
-.header_container{
+.links{
+    width: 100%;
+    box-sizing: border-box;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-.logo{
-    width: 50%;
-    height: auto;
-    padding: 1em;
+    padding: 0.2em;
 }
 .logo-png{
-    width: 90%;
-    /* flex-grow: 3; */
-}
-.lins{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 60%;
+    margin-top: 0.8rem;
+    margin-left: 7rem;
+    margin-right: -5rem;
 }
 .dropdown{
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -45,21 +38,20 @@ header{
     align-items: center;
     padding: 2em;
 }
-.link{
-    font-size: 120%;
+.link{ 
+    font-size: 1.4rem; 
     align-self: center;
     font-family: 'Inter', sans-serif;
     text-decoration: none;
     color: antiquewhite; 
     text-transform: uppercase;
     object-fit: contain;
-    margin: 1rem;
-    
+    margin: 0.9rem;
 }
 .link:hover{
     transform: scale(1.2);
     font-weight: bold;
-}
+} 
 .home1{ 
     background-color: #013781;
     display: flex;
@@ -118,8 +110,12 @@ h1 {
     margin: 0.3rem;
 }
 .ig-logo{
+   
     transform: scale(0.8);
     transform: translate(0rem, 0.3rem); 
+}
+.ig-logo2{
+    display: none;
 }
 .ig-line{
     transform: translate(0rem, -0.4rem); 

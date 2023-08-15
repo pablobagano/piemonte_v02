@@ -1,11 +1,7 @@
 {% load static %}
 <header>
-    <div class="header_container">
-        <section class="logo">
-            <a href="{% url 'index' %}"><img src="{% static 'assets/logo_piemonte.png' %}" alt="Logo Piemonte" class="logo-png"></a>
-        </section>
-    </div>
     <section class="links">
+        <a href="{% url 'index' %}"><img src="{% static 'assets/logo_piemonte.png' %}" alt="Logo Piemonte" class="logo-png"></a>
         <div class="dropdown">
             <button  onclick="menu()" class="menu-btn"><img src="{% static 'assets/menu.png' %}" alt="menu" class="menu-icon">MENU</button>
                 <div class="dropdownContent" id="myDropdown">
