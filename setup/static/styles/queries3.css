@@ -25,7 +25,8 @@ header{
 }
 
 .menu-btn{
-    width: 10rem;
+    width: 4rem;
+    height: 4rem;
     background-color: #013781;
     color: antiquewhite;
     font-family: 'Inter', sans-serif;
@@ -55,7 +56,6 @@ header{
     right: 0.5rem;
     
 }
-
 .link{
     color: black;
     padding: 0.75rem 1rem;
@@ -71,3 +71,10 @@ header{
 
 .show {display:block;} 
     }
+.home1{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}

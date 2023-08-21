@@ -52,7 +52,8 @@ header{
     transform: scale(1.2);
     font-weight: bold;
 } 
-.home1{ 
+.home1{
+    width: 100%;
     background-color: #013781;
     display: flex;
 }
