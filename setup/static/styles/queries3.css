@@ -2,16 +2,17 @@
 /* start of medium tablet styles */
 header{
     width: 100%;
+    box-sizing: border-box;
     height: auto;
     background: #FDE200;
     background: -moz-linear-gradient(left, #FDE200 0%, #3A5F7B 76%, #013781 100%);
     background: -webkit-linear-gradient(left, #FDE200 0%, #3A5F7B 76%, #013781 100%);
     background: linear-gradient(to right, #FDE200 0%, #3A5F7B 76%, #013781 100%);
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     /* position: relative; */
-    padding: 2rem;
+    padding: 0.5rem 2rem;
 }
 
 .header_container{
@@ -21,12 +22,16 @@ header{
     flex-shrink: 0;
 }
 .logo-png{
-    display: none;
+    width: 60%;
+    margin-top: 0.8rem;
+    margin-left: 2rem;
+    
+
 }
 
 .menu-btn{
     width: 6rem;
-    height: 4rem;
+    height: 3rem;
     background-color: #013781;
     color: antiquewhite;
     font-family: 'Inter', sans-serif;
@@ -38,9 +43,6 @@ header{
 }
 .menu-btn:hover{
     background-color: #3A5F7B;
-}
-.menu-icon{
-    display: none;
 }
 .dropdown{
     position: relative;
@@ -77,6 +79,7 @@ header{
     width: 100%;
     flex-direction: column;
     justify-content: center;
+    padding: 0.5rem 2rem;
     
 }
 
@@ -89,6 +92,7 @@ header{
 }
 h1{
     font-size: 2rem;
+    margin: 0.5rem;
 }
 .text1 p{
     font-size: 1rem;
@@ -98,7 +102,7 @@ h1{
     margin-left: 0;
 }
 .homepic1{
-    display: none;
+    width: 100%;
 }
     }
 
