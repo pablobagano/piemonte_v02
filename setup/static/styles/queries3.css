@@ -40,6 +40,7 @@ header{
     border: none;
     border-radius: 0.7rem;
     cursor: pointer; 
+    margin-top: 0.3rem;
 }
 .menu-btn:hover{
     background-color: #3A5F7B;
