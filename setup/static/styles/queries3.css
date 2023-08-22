@@ -20,12 +20,12 @@ header{
     align-items: flex-start;
     flex-shrink: 0;
 }
-.logo{
+.logo-png{
     display: none;
 }
 
 .menu-btn{
-    width: 4rem;
+    width: 6rem;
     height: 4rem;
     background-color: #013781;
     color: antiquewhite;
@@ -69,12 +69,25 @@ header{
     background-color: #ddd;
 }
 
-.show {display:block;} 
-    }
+.show {
+    display:block;
+}
+
 .home1{
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
 }
+.text1{
+    width: 100%;
+}
+h1{
+    font-size: 3rem;
+}
+.text1 p{
+    font-size: 1rem;
+}
+    }
+
+
