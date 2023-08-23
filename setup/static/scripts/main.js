@@ -19,8 +19,9 @@ window.onclick = function (event) {
 
 document.addEventListener("DOMContentLoaded", function() {
     var contactButton = document.getElementById("contato");
+    var url = contactButton.getAttribute("data-url");
 
     contactButton.addEventListener("click", function() {
-        window.location.href = "{url 'contato'}";
+        window.location.href = url;
     });
-})
+});
