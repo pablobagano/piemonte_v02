@@ -2,7 +2,7 @@
 function menu() {
     var dropdown = document.getElementById("myDropdown");
     dropdown.classList.toggle("show");
-}
+};
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function (event) {
@@ -15,4 +15,12 @@ window.onclick = function (event) {
             }
         }
     }
-}
+};
+
+document.addEventListener("DOMContentLoaded", function() {
+    var contactButton = document.getElementById("contato");
+
+    contactButton.addEventListener("click", function() {
+        window.location.href = "{url 'contato'}";
+    });
+})

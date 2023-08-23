@@ -1,0 +1,19 @@
+{% extends "piemonte/base.html" %}
+{% load static %}
+{% block content %}
+<div class="emprestimos">
+    <section class="emprestimos__texto">
+        <h1>empréstimos</h1>
+        <p>A PiemonteCred faz parte do Grupo Piemonte e é correspondente do Banco do Brasil.</p>
+        <p>Isso quer dizer que você pode confiar na transparência e solidez dos nossos empréstimos. Confira nossas modalidades!</p>
+        <p class="tipo__emprestimo">crédito consignado</p>
+        <p class="tipo__emprestimo">renovação de crédito</p>
+        <p class="tipo__emprestimo">portabilidade</p>
+        <p class="tipo__emprestimo">saque fgts</p>
+        <button class="button-emprestimo" id="contato >Fale conosco!</button>
+    </section>
+    <section class="emprestimos_pic">
+        <img src="{% static 'assets/emprestimos.png' %}" alt="" class="emprestimos_png">
+    </section>
+</div>
+{% endblock content %}
