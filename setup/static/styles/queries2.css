@@ -13,17 +13,20 @@
     }
     .links{
         box-sizing: border-box;
-        flex: 2 2 1rem;
+        max-width: 100%;
+        width: auto;
         padding: 1em;
     }
     .dropdownContent{
         box-sizing: border-box;
         justify-self: center;
-        padding: 1.5em;
+        padding: 0.5rem;
     }
     .link{
-        font-size: 100%;
-        margin: 0.3rem;
+        font-size: 2.4vw;
+        max-width: 50%;
+        width: auto;
+        margin: 0.25rem;
         align-self: center;
     }
     .home1{
@@ -33,7 +36,7 @@
         color: antiquewhite;
         text-transform: uppercase;
         font-family: 'Rowdies', cursive; 
-        font-size: 2.5rem;
+        font-size: 4.5vw;
         text-align: center;
         margin: 0.5rem;
         margin-left: 1rem;
@@ -48,7 +51,7 @@
         padding: 1rem;
     }
     .text1 p{
-        font-size: 1rem;
+        font-size: 2.5vw;
         color: antiquewhite;
         text-transform: uppercase;
         text-align: left; 
@@ -61,7 +64,9 @@
         width: 60%;
     }
     .pic1{
-        flex: 2 2 1rem; 
+        width: 50vw;
+        max-width: 100%;
+        flex-shrink: 2;
     }
     .footer-grid{
     
@@ -75,7 +80,7 @@
         padding: 2em;
     }
     .footer-grid p{
-        font-size: 80%;
+        font-size: 2vw;
         color: antiquewhite;
         font-family: 'Roboto', sans-serif;
         /* font-weight: bold; */
@@ -91,8 +96,8 @@
     .ig-logo2{
         display: none;
     }
-    .ig-line{
-        transform: translate(0rem, -0.2rem); 
+    /* .ig-line{
+        display: none;
     }
-
+    */
 } 
