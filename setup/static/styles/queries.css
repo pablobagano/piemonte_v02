@@ -1,12 +1,29 @@
 @media (min-width: 768px) and (max-width:1099px){
-    header{
-        width: 100%;
-    }
-    .logo-png{
-        display: none;
-    }
-    .home1{
-        display:none; 
-    }
+header{
+    display: flex;
+    background: #013781;
+    background: -moz-linear-gradient(left, #013781 0%, #8B943B 78%, #FDE200 100%);
+    background: -webkit-linear-gradient(left, #013781 0%, #8B943B 78%, #FDE200 100%);
+    background: linear-gradient(to right, #013781 0%, #8B943B 78%, #FDE200 100%);
+}
+
+.logo-png{
+   display: none;
+}
+.links{
+    padding: 0.2em;
+}
+.link{
+    font-size: 2.3vw;
+    margin: 0.5rem;
+    transform: translate(2.7rem);
+    color: bisque;
+}
+h1{
+    font-size: 4vw;
+}
+.pic1{
+    transform: translate(-4rem, 20vh);
+}
 
 }
