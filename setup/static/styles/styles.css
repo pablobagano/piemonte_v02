@@ -10,7 +10,6 @@ header{
 
 }
 .links{
-    /* width: 100%; */
     box-sizing: border-box;
     display: flex;
     padding: 0.2em;
@@ -26,6 +25,7 @@ header{
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+    object-fit: contain;
 }
 .menu-btn{
     display: none;
@@ -94,6 +94,7 @@ h1 {
 }
 .pic1{
     width: 100%;
+    max-width: 100%;
 }
 footer{
     box-sizing: border-box;
