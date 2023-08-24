@@ -128,3 +128,45 @@ footer{
 .ig-line{
     transform: translate(0rem, -0.4rem); 
 }
+.emprestimos{
+    box-sizing: border-box;
+    background: #FDE200;
+    background: -moz-linear-gradient(-45deg, #FDE200 0%, #E1CF0F 44%, #C4BB1E 100%);
+    background: -webkit-linear-gradient(-45deg, #FDE200 0%, #E1CF0F 44%, #C4BB1E 100%);
+    background: linear-gradient(135deg, #FDE200 0%, #E1CF0F 44%, #C4BB1E 100%);
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+.emprestimos_texto{
+    box-sizing: border-box;
+    width: 50%;
+    padding: 1em;
+}
+.emprestimos h1{
+    color: #144378;
+}
+.emprestimos p{
+    font-size: 1.5vw;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    line-height: 2rem;
+    text-align: left;
+    margin-left: 2rem;
+    transform: translate(0rem, 4rem);
+}
+.tipo_emprestimo{
+    font-weight: bold;
+}
+.whatsapp-1{
+    width: 30%;
+    transform: translate(0rem, 3rem);
+}
+.emprestimos_pic{
+    box-sizing: border-box;
+    width: 50%;
+}
+.emprestimos_png{
+    max-width: 100%;
+    align-self: center;
+}
