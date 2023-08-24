@@ -3,6 +3,7 @@
 {% block content %}
 <div class="emprestimos">
     <section class="emprestimos_texto">
+        <div class="emprestimos_div_texto">
         <h1>empréstimos</h1>
         <p>A PiemonteCred faz parte do Grupo Piemonte e é correspondente do Banco do Brasil.</p>
         <p>Isso quer dizer que você pode confiar na transparência e solidez dos nossos empréstimos. Confira nossas modalidades!</p>
@@ -15,9 +16,12 @@
         <br>
         <p class="tipo_emprestimo">saque fgts</p>
         <br>
+        </div>
         <!-- <button class="button-emprestimo" id="contato" data-url="{% url 'contato' %}">Fale conosco!</button> -->
+        <div class="emprestimos_div_pic">
         <a href="{% url 'contato' %}"><img src="{% static 'assets/whatsapp.png' %}" alt="" class="whatsapp-1">
         </a>
+        </div>
     </section>
     <section class="emprestimos_pic">
         <img src="{% static 'assets/emprestimos.png' %}" alt="" class="emprestimos_png">

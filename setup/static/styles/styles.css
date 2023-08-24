@@ -165,8 +165,11 @@ footer{
 .emprestimos_pic{
     box-sizing: border-box;
     width: 50%;
+    display: flex;
+    
 }
 .emprestimos_png{
     max-width: 100%;
     align-self: center;
+    margin-top: 2rem;
 }

@@ -50,6 +50,8 @@ header{
     display: inline-block;
 }
 .dropdownContent{
+    box-sizing: border-box;
+    width: 35vw;
     display: none;
     position: absolute;
     background-color: antiquewhite;
@@ -60,10 +62,12 @@ header{
     
 }
 .link{
+    font-size: 0.9em;
     color: black;
-    padding: 0.75rem 1rem;
+    padding: 0.8vw;
     text-decoration: none;
     display: block;
+    margin-left: -3vw;
 }
 
 .link:hover {

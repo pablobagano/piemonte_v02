@@ -2,9 +2,9 @@
 header{
     display: flex;
     background: #013781;
-    background: -moz-linear-gradient(left, #013781 0%, #8B943B 78%, #FDE200 100%);
-    background: -webkit-linear-gradient(left, #013781 0%, #8B943B 78%, #FDE200 100%);
-    background: linear-gradient(to right, #013781 0%, #8B943B 78%, #FDE200 100%);
+    background: -moz-linear-gradient(left, #013781 0%, #526D58 78%, #8B943B 100%);
+    background: -webkit-linear-gradient(left, #013781 0%, #526D58 78%, #8B943B 100%);
+    background: linear-gradient(to right, #013781 0%, #526D58 78%, #8B943B 100%);
 }
 
 .logo-png{
@@ -25,5 +25,49 @@ h1{
 .pic1{
     transform: translate(-4rem, 20vh);
 }
-
+.emprestimos{
+    box-sizing: border-box;
+    background: #FDE200;
+    background: -moz-linear-gradient(-45deg, #FDE200 0%, #E1CF0F 44%, #C4BB1E 100%);
+    background: -webkit-linear-gradient(-45deg, #FDE200 0%, #E1CF0F 44%, #C4BB1E 100%);
+    background: linear-gradient(135deg, #FDE200 0%, #E1CF0F 44%, #C4BB1E 100%);
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+.emprestimos_texto{
+    box-sizing: border-box;
+    width: 60%;
+    padding: 1em;
+}
+.emprestimos_div_texto{
+    padding: 0.5rem;
+}
+.emprestimos h1{
+    color: #144378;
+}
+.emprestimos p{
+    font-size: 1.5vw;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    line-height: 1.2rem;
+    text-align: left;
+    margin-left: 2rem;
+    transform: translate(0rem, 0rem);
+}
+.tipo_emprestimo{
+    font-weight: bold;
+}
+.whatsapp-1{
+    width: 30%;
+    transform: translate(3vw, 0vh);
+}
+.emprestimos_pic{
+    box-sizing: border-box;
+    width: 50%;
+}
+.emprestimos_png{
+    max-width: 100%;
+    align-self: center;
+}
 }
