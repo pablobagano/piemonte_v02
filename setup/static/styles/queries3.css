@@ -156,8 +156,41 @@ h1{
     display: none;
 
 }
-
+.consorcios{
+    box-sizing: border-box;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    
+}
+.consorcio-texto{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.2em;
+}
+.consorcio-texto p{
+    font-size: 2vw;
+    color: antiquewhite;
+    font-family: 'Inter', sans-serif;
+    line-height: 1rem;
+    margin: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     }
-
-
-
+.zap1{
+    width: 6vh;
+}
+.consorcio-pic{
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 2em;
+}
+.consorcio-png{
+    width: 100%;
+}
+}
