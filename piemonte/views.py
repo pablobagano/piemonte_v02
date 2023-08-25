@@ -10,3 +10,6 @@ def emprestimos(request):
 
 def contato(request):
     return render(request, 'piemonte/contato.html')
+
+def consorcios(request):
+    return render(request, 'piemonte/consorcios.html')

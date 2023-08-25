@@ -173,3 +173,38 @@ footer{
     align-self: center;
     margin-top: 2rem;
 }
+.consorcios{
+    width: 100%;
+    background: #FDE200;
+    background: -moz-linear-gradient(45deg, #FDE200 0%, #184675 96%, #013781 100%);
+    background: -webkit-linear-gradient(45deg, #FDE200 0%, #184675 96%, #013781 100%);
+    background: linear-gradient(45deg, #FDE200 0%, #184675 96%, #013781 100%);
+    display: flex;
+    justify-content: flex-start;
+}
+.consorcio-pic{
+    box-sizing: border-box;
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 2em;
+}
+.consorcio-png{
+    width: 100%;
+}
+.consorcio-texto{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3em;
+}
+.consorcio-texto p{
+    font-size: 1.5rem;
+    color: antiquewhite;
+    font-family: 'Inter', sans-serif;
+    margin-left: 5rem;
+    margin: 1rem;
+}
