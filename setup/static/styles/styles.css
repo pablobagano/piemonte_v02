@@ -195,6 +195,7 @@ footer{
 }
 .consorcio-texto{
     width: 50%;
+    box-sizing: border-box;
     height: auto;
     display: flex;
     flex-direction: column;

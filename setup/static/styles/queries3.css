@@ -96,7 +96,7 @@ header{
     padding: 1rem;
 }
 h1{
-    font-size: 2rem;
+    font-size: 8vw;
     margin: 0.5rem;
 }
 .text1 p{
@@ -157,30 +157,36 @@ h1{
 
 }
 .consorcios{
+    width: 100%;
     box-sizing: border-box;
     flex-direction: column-reverse;
     justify-content: flex-start;
     
 }
 .consorcio-texto{
-    width: 100vw;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0.2em;
+    padding: 1em;
 }
 .consorcio-texto p{
-    font-size: 2vw;
+    font-size: 2.5vw;
     color: antiquewhite;
     font-family: 'Inter', sans-serif;
-    line-height: 1rem;
-    margin: 0.5rem;
+    line-height: 0.8rem;
+    margin: 0.3rem;
     margin-left: 1rem;
     margin-right: 1rem;
     }
+.consorcio-texto h1{
+    margin-left: 1rem;
+}
 .zap1{
-    width: 6vh;
+    width: 20%;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 .consorcio-pic{
     box-sizing: border-box;
