@@ -70,4 +70,47 @@ h1{
     max-width: 100%;
     align-self: center;
 }
+.consorcios{
+    width: 100%;
+    box-sizing: border-box;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+}
+.consorcio-texto{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1em;
+}
+.consorcio-texto p{
+    font-size: 2vw;
+    color: antiquewhite;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.2rem;
+    margin: 0.3rem;
+    margin-left: 1rem;
+    }
+.consorcio-texto h1{
+    margin-left: 1rem;
+}
+.zap1{
+    width: 30%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.consorcio-pic{
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+}
+.consorcio-png{
+    width: 40%;
+    align-self: center;
+    margin-left: 32vw;
+}
 }
