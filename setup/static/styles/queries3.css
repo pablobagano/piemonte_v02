@@ -199,4 +199,22 @@ h1{
 .consorcio-png{
     width: 100%;
 }
+.produtos{
+    flex-direction: column-reverse;
+}
+.produtos-img{
+    width: 100%;
+    padding: 0.5em;
+}
+.produtos-texto{
+    width: 100%;
+    transform: translate(0, -4rem);
+}
+.produtos-texto p{
+    font-size: 5vw;
+    text-align: left;
+    color: antiquewhite;
+    line-height: 6vw;
+    margin: 1.5rem;
+}
 }

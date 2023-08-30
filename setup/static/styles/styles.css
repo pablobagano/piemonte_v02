@@ -65,7 +65,7 @@ h1 {
     color: antiquewhite;
     text-transform: uppercase;
     font-family: 'Rowdies', cursive; 
-    font-size: 5rem;
+    font-size: 5vw;
     text-align: center;
     margin: 1rem;
 }
@@ -219,6 +219,7 @@ footer{
     align-items: center;
 }
 .produtos-texto{
+    box-sizing: border-box;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -235,10 +236,10 @@ footer{
     margin: 1.5rem;
 }
 .produtos-img{
+    box-sizing: border-box;
     width: 50%;
+    padding: 2em;
 }
 .produtos-pic{
-    width: 90%;
-    padding: 2em;
-
+    width: 100%;
 }
