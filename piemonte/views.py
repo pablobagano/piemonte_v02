@@ -13,3 +13,6 @@ def contato(request):
 
 def consorcios(request):
     return render(request, 'piemonte/consorcios.html')
+
+def produtos(request):
+    return render(request, 'piemonte/produtos.html')

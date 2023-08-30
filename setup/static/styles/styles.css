@@ -211,3 +211,34 @@ footer{
     margin-left: 5rem;
     margin: 1rem;
 }
+.produtos{
+    box-sizing: border-box;
+    background-color: #013781;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.produtos-texto{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+
+.produtos-texto p{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-align: left;
+    color: antiquewhite;
+    line-height: 3rem;
+    margin: 1.5rem;
+}
+.produtos-img{
+    width: 50%;
+}
+.produtos-pic{
+    width: 90%;
+    padding: 2em;
+
+}
