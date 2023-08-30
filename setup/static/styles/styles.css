@@ -253,6 +253,7 @@ footer{
     align-items: flex-start;
 }
 .mapa{
+    box-sizing: border-box;
     width: 50%;
     padding: 6rem;
 }
@@ -281,4 +282,5 @@ footer{
     color: antiquewhite;
     line-height: 2.35rem;
     font-size: 1.3vw;
+
 }

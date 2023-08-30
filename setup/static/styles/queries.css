@@ -144,4 +144,46 @@ h1{
 .produtos-pic{
     width: 100%;
 }
+.localizacao{
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    background-color: #013781;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.mapa{
+    box-sizing: border-box;
+    width: 50%;
+    padding: 1rem;
+    margin-top: 15vw;
+    margin-left: 5vw;
+}
+.estados{
+    box-sizing: border-box;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    column-count: 3;
+}
+.estados h2{
+    font-size: 3vw;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    color: antiquewhite;
+}
+
+.lista-cidades{
+    column-count: 2;
+    column-width: 50%;
+}
+.lista-cidades p {
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    color: antiquewhite;
+    line-height: 3vw;
+    font-size: 2vw;
+} 
 }
