@@ -1,4 +1,5 @@
 from django.shortcuts import render, HttpResponse
+from map import * 
 
 # Create your views here.
 
@@ -16,3 +17,8 @@ def consorcios(request):
 
 def produtos(request):
     return render(request, 'piemonte/produtos.html')
+
+def localizacao(request):
+    mapa = world_map
+    context = {"mapa":mapa, "bahia":bahia, "sergipe":sergipe}
+    return render(request, 'piemonte/localizacao.html', context)

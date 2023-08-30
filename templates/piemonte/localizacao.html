@@ -1,0 +1,35 @@
+{% extends "piemonte/base.html" %}
+{% load static %}
+{% block content %}
+<div class="localizacao">
+    <section class="mapa">
+       {{mapa | safe}}
+    </section>
+    <section class="estados">
+       <div class="estado">
+           <h2>bahia</h2> 
+           <br>
+           <div class="lista-cidades">
+               {% for cidade in bahia %}
+                   <p class="cidade">{{ cidade }}</p>
+               {% endfor %}
+           </div>
+       </div>
+       <br>
+       <br>
+       <div class="estado">
+           <h2>sergipe</h2> 
+           <br>
+           <div class="lista-cidades"> 
+               {% for cidade in sergipe %}
+                   <p class="cidade">{{ cidade }}</p>
+               {% endfor %}
+           </div>
+       </div>
+       <br>
+       <br>
+       <br>
+       </div>    
+    </section>
+   </div>
+{% endblock content %}
