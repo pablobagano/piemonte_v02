@@ -185,5 +185,11 @@ h1{
     color: antiquewhite;
     line-height: 3vw;
     font-size: 2vw;
-} 
+}
+.button-form{
+    font-size: 2vw;
+    padding: 0.6rem 1rem;
+    align-self: center;
+    margin: 1rem; 
+}
 }

@@ -273,4 +273,35 @@
         line-height: 3vw;
         font-size: 2vw;
 } 
+.contato-texto p{
+    font-size: small;
+  }
+  .formulario-contato{
+     display: flex;
+     flex-direction: column;
+     align-items: left;
+     padding: 0.1em;
+ }
+ .fields{
+     font-family: 'Roboto', sans-serif;
+     text-transform: uppercase;
+     margin: 0.5em 0;
+     border-radius: 1rem;
+ }
+ .fields label{
+     color: antiquewhite;
+     font-size: 3vw;
+     font-weight: bold;
+     text-align: left;
+     }
+ .form-input {
+     font-size: 3vw;
+     border-radius: 0.4vw;
+     }
+ .button-form{
+     font-size: 2vw;
+     padding: 0.6rem 1rem;
+     align-self: center;
+     margin: 1rem; 
+ }
 }
