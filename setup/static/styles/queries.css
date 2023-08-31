@@ -192,4 +192,30 @@ h1{
     align-self: center;
     margin: 1rem; 
 }
+.obrigado{
+    background-color:#FDE200; 
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+.obrigado h1{
+    color:#013781; 
+}
+.obrigado p {
+    font-size: 3vw;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+.obrigado_div_pic{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5em;
+}
+.obrigado-pic{
+    align-self: center;
+    width: 70%;
+    margin-left: 15vw;
+}
 }
