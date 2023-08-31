@@ -8,5 +8,6 @@ urlpatterns = [
     path('consorcios', consorcios, name='consorcios'),
     path('produtos', produtos, name='produtos'),
     path('localizaco', localizacao, name='localizacao'), 
-    path('contato', contato, name='contato')
+    path('contato', contato, name='contato'),
+    path('obrigado', obrigado, name='obrigado')
 ]

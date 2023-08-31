@@ -340,3 +340,10 @@ footer{
     align-self: center;
     margin: 1rem; 
 }
+.obrigado{
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vw;
+    display: flex;
+    flex-direction: column;
+}

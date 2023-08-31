@@ -33,4 +33,7 @@ def contato(request):
             messages.error(request, 'Verifique as informações e tente novamente')
             form = LeadForm()
     return render(request, 'piemonte/contato.html', {'form':form})
+
+def obrigado(request):
+    return render(request, 'piemonte/obrigado.html')
    
