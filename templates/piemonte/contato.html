@@ -1,8 +1,24 @@
 {% extends "piemonte/base.html" %}
 {% load static %}
 {% load widget_tweaks %}
-{% block blockname %}
-<div style="background-color: black;">
-  <h1>Xibiu</h1>
+{% block content %}
+<div class="contato">
+  <div class="contato-texto">
+      <h1>fale conosco</h1>
+      <p>preencha o formulário abaixo para ter atendimento personalizado com nossos consultores.</p>
+      {% include "partials/_alertas.html" %}
+  </div>
+  <div class="contato-form">
+      <form action="", method="POST" class="formulario-contato">
+          {% csrf_token %}
+          {% for field in form.visible_fields  %}
+            <div class="fields">
+              <label for="{{field.id_label}}">{{field.label}}</label>
+              {{field|add_class:"form-input"}}
+            </div>
+          {% endfor %}
+          <button type="submit" class="button-form">Enviar</button>
+      </form>
+  </div>
 </div>
-{% endblock blockname %}
+{% endblock %}

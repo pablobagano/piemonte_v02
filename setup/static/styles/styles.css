@@ -282,5 +282,50 @@ footer{
     color: antiquewhite;
     line-height: 2.35rem;
     font-size: 1.3vw;
-
 }
+.contato{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: #013781;
+}
+.contato-texto{
+    box-sizing: border-box;
+    background-color: #FDE200;
+    padding: 3em;
+}
+.contato-texto h1{
+    color: #013781;
+}
+.contato-texto p{
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 1rem;
+ }
+ .contato-form{
+    background-color: #013781;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 1em;
+}
+.formulario-contato{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 2em;
+}
+.fields{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    margin: 1em 0;
+    border-radius: 1rem;
+}
+.fields label{
+    color: antiquewhite;
+    font-size: 3vw;
+    font-weight: bold;
+    margin: 0 1rem;
+    text-align: left;
+    }
