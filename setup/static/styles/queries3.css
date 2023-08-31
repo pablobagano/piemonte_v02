@@ -242,4 +242,38 @@ h1{
     width: 100%;
     padding: 0rem;
 }
+.contato-texto{
+    padding: 1em;
+}
+.contato-texto p{
+   font-size: small;
+ }
+ .formulario-contato{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 0.1em;
+}
+.fields{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    margin: 0.8em 0;
+    border-radius: 1rem;
+}
+.fields label{
+    color: antiquewhite;
+    font-size: 4vw;
+    font-weight: bold;
+    text-align: left;
+    }
+.form-input {
+    font-size: 4vw;
+    border-radius: 0.4vw;
+    }
+.button-form{
+    font-size: 4vw;
+    padding: 0.6rem 1rem;
+    align-self: center;
+    margin: 1rem; 
+}
 }

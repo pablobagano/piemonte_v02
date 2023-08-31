@@ -299,6 +299,7 @@ footer{
 }
 .contato-texto p{
     text-transform: uppercase;
+    font-size: large;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     margin: 1rem;
@@ -324,8 +325,18 @@ footer{
 }
 .fields label{
     color: antiquewhite;
-    font-size: 3vw;
+    font-size: 2vw;
     font-weight: bold;
     margin: 0 1rem;
     text-align: left;
     }
+.form-input {
+    font-size: 2vw;
+    border-radius: 0.4vw;
+}
+.button-form{
+    font-size: 1vw;
+    padding: 0.6rem 3rem;
+    align-self: center;
+    margin: 1rem; 
+}
