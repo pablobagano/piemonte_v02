@@ -25,7 +25,7 @@ def localizacao(request):
 def contato(request):
     form = LeadForm()
     if request.method == 'POST':
-        form = LeadForm(request.post)
+        form = LeadForm(request.POST)
         if form.is_valid():
             form.save()
             return redirect('obrigado')
