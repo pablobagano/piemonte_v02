@@ -121,13 +121,25 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_URL = 'static/'
+AZURE_ACCOUNT_NAME = str(os.getenv('AZURE_ACCOUNT_NAME'))
+AZURE_ACCOUNT_KEY = str(os.getenv('AZURE_ACCOUNT_KEY')) 
+AZURE_CONTAINER = str(os.getenv('AZURE_CONTAINER'))
+
+#Use Azure Storage as backend for static files storage 
+STATICFILES_STORAGE = 'storages.backends.azure_storage.AzureStorage'
+
+#Azure Blob Domain and static URL 
+AZURE_DOMAIN = f"{AZURE_ACCOUNT_NAME}.blob.core.windows.net"
+STATIC_URL = f"https://{AZURE_DOMAIN}/{AZURE_CONTAINER}/"
+
+# Local static settings (for reference or local development)
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'setup/static')
 ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
