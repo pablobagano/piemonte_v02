@@ -4,7 +4,7 @@ azure-storage-blob==12.18.1
 boto3==1.28.44
 botocore==1.31.44
 branca==0.6.0
-certifi==2023.5.7
+certifi==2023.7.22
 cffi==1.15.1
 charset-normalizer==3.2.0
 clear==2.0.0
