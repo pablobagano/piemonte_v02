@@ -13,7 +13,9 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 from pathlib import Path, os
 from dotenv import load_dotenv
 from django.contrib.messages import constants as messages
+import pymysql
 
+pymysql.install_as_MySQLdb()
 load_dotenv()
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -91,12 +93,12 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': str(os.getenv('DB_NAME')),
         'USER': str(os.getenv('DB_USER')),
-        'PASSWORD': str(os.getenv('DB_PASSWORD')),
+        'PASSWORD': str(os.getenv('DB_PASSWORD')), 
         'HOST': str(os.getenv('DB_HOST')),
         'PORT': '3306',
         'OPTIONS': {
             'ssl': {
-                'ca': CERT_PATH,  # Use the CERT_PATH variable you defined earlier
+                'ca': '/Users/pablobagano/Desktop/piemonte_v2/DigiCertGlobalRootCA.crt.pem',  # Use the CERT_PATH variable you defined earlier
             },
         },
     }
