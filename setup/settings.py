@@ -80,12 +80,35 @@ WSGI_APPLICATION = 'setup.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
+if str(os.getenv('DJANGO_ENV')) == 'production':
+    CERT_PATH = '/etc/ssl/certs/BaltimoreCyberTrustRoot.crt.pem'
+else:
+    CERT_PATH = '/Users/pablobagano/Desktop/piemonte_v2/DigiCertGlobalRootCA.crt.pem'
+
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': str(os.getenv('DB_NAME')),
+        'USER': str(os.getenv('DB_USER')),
+        'PASSWORD': str(os.getenv('DB_PASSWORD')),
+        'HOST': str(os.getenv('DB_HOST')),
+        'PORT': '3306',
+        'OPTIONS': {
+            'ssl': {
+                'ca': CERT_PATH,  # Use the CERT_PATH variable you defined earlier
+            },
+        },
     }
 }
+
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 
 
 # Password validation
