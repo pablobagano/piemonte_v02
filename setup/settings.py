@@ -14,6 +14,8 @@ from pathlib import Path, os
 from dotenv import load_dotenv
 from django.contrib.messages import constants as messages
 import pymysql
+from azure.identity import DefaultAzureCredential
+from azure.keyvault.secrets import SecretClient
 
 pymysql.install_as_MySQLdb()
 load_dotenv()
@@ -82,8 +84,18 @@ WSGI_APPLICATION = 'setup.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
+
+def vault_access(): #retrives ssl certificate from vault
+    key_vault_url = "https://piemontevault.vault.azure.net/"
+    credential = DefaultAzureCredential()
+    client = SecretClient(vault_url=key_vault_url, credential=credential)
+
+    certificate = client.get_secret('pablobagano')
+    return certificate.value
+
+
 if str(os.getenv('DJANGO_ENV')) == 'production':
-    CERT_PATH = '/etc/ssl/certs/BaltimoreCyberTrustRoot.crt.pem'
+    CERT_PATH = vault_access()
 else:
     CERT_PATH = '/Users/pablobagano/Desktop/piemonte_v2/DigiCertGlobalRootCA.crt.pem'
 
@@ -98,7 +110,7 @@ DATABASES = {
         'PORT': '3306',
         'OPTIONS': {
             'ssl': {
-                'ca': '/Users/pablobagano/Desktop/piemonte_v2/DigiCertGlobalRootCA.crt.pem',  # Use the CERT_PATH variable you defined earlier
+                'ca': CERT_PATH,  # Use the CERT_PATH variable you defined earlier
             },
         },
     }
