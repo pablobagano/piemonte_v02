@@ -15,7 +15,9 @@ from dotenv import load_dotenv
 from django.contrib.messages import constants as messages
 import pymysql
 from azure.identity import DefaultAzureCredential
-from azure.keyvault.secrets import SecretClient
+from azure.keyvault.secrets import SecretClient 
+import tempfile
+import os
 
 pymysql.install_as_MySQLdb()
 load_dotenv()
@@ -90,14 +92,18 @@ def vault_access(): #retrives ssl certificate from vault
     credential = DefaultAzureCredential()
     client = SecretClient(vault_url=key_vault_url, credential=credential)
 
-    certificate = client.get_secret('pablobagano')
-    return certificate.value
+    certificate_content = client.get_secret('pablobagano').value
+
+    with tempfile.NamedTemporaryFile(delete=False, suffix=".pem") as temp_cert_file:
+        temp_cert_file.write(certificate_content.encode())
+        return temp_cert_file.name
 
 
 if str(os.getenv('DJANGO_ENV')) == 'production':
     CERT_PATH = vault_access()
 else:
     CERT_PATH = '/Users/pablobagano/Desktop/piemonte_v2/DigiCertGlobalRootCA.crt.pem'
+
 
 
 DATABASES = {
