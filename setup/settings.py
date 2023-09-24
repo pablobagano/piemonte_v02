@@ -15,7 +15,7 @@ from dotenv import load_dotenv
 from django.contrib.messages import constants as messages
 import pymysql
 from azure.identity import DefaultAzureCredential
-from azure.keyvault.secrets import SecretClient 
+from azure.storage.blob import BlobServiceClient
 import tempfile
 import os
 
@@ -86,25 +86,24 @@ WSGI_APPLICATION = 'setup.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-
-def vault_access(): #retrives ssl certificate from vault
-    key_vault_url = "https://piemontevault.vault.azure.net/"
-    credential = DefaultAzureCredential()
-    client = SecretClient(vault_url=key_vault_url, credential=credential)
-
-    certificate_content = client.get_secret('pablobagano').value
+def container_access():
+    account_url = 'https://stuffdb.blob.core.windows.net/stuffdb'
+    container_name = 'stuffdb'
+    blob_name = "DigiCertGlobalRootCA.crt.pem"
+    blob_service_client = BlobServiceClient(account_url=account_url, credential=DefaultAzureCredential())
+    container_client = blob_service_client.get_container_client(container_name)
+    blob_client = container_client.get_blob_client(blob_name)
 
     with tempfile.NamedTemporaryFile(delete=False, suffix=".pem") as temp_cert_file:
-        temp_cert_file.write(certificate_content.encode())
+        blob_data = blob_client.download_blob()
+        temp_cert_file.write(blob_data.readall())
         return temp_cert_file.name
 
 
 if str(os.getenv('DJANGO_ENV')) == 'production':
-    CERT_PATH = vault_access()
+    CERT_PATH = container_access()
 else:
     CERT_PATH = '/Users/pablobagano/Desktop/piemonte_v2/DigiCertGlobalRootCA.crt.pem'
-
-
 
 DATABASES = {
     'default': {
