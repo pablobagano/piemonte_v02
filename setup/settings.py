@@ -86,24 +86,26 @@ WSGI_APPLICATION = 'setup.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-def container_access():
-    account_url = 'https://stuffdb.blob.core.windows.net/stuffdb'
-    container_name = 'stuffdb'
-    blob_name = "DigiCertGlobalRootCA.crt.pem"
-    blob_service_client = BlobServiceClient(account_url=account_url, credential=DefaultAzureCredential())
-    container_client = blob_service_client.get_container_client(container_name)
-    blob_client = container_client.get_blob_client(blob_name)
+# def container_access():
+#     account_url = 'https://stuffdb.blob.core.windows.net/stuffdb'
+#     container_name = 'stuffdb'
+#     blob_name = "DigiCertGlobalRootCA.crt.pem"
+#     blob_service_client = BlobServiceClient(account_url=account_url, credential=DefaultAzureCredential())
+#     container_client = blob_service_client.get_container_client(container_name)
+#     blob_client = container_client.get_blob_client(blob_name)
 
-    with tempfile.NamedTemporaryFile(delete=False, suffix=".pem") as temp_cert_file:
-        blob_data = blob_client.download_blob()
-        temp_cert_file.write(blob_data.readall())
-        return temp_cert_file.name
+#     with tempfile.NamedTemporaryFile(delete=False, suffix=".pem") as temp_cert_file:
+#         blob_data = blob_client.download_blob()
+#         temp_cert_file.write(blob_data.readall())
+#         return temp_cert_file.name
 
 
-if str(os.getenv('DJANGO_ENV')) == 'production':
-    CERT_PATH = container_access()
-else:
-    CERT_PATH = '/Users/pablobagano/Desktop/piemonte_v2/DigiCertGlobalRootCA.crt.pem'
+# if str(os.getenv('DJANGO_ENV')) == 'production':
+#     CERT_PATH = container_access()
+# else:
+#     CERT_PATH = '/Users/pablobagano/Desktop/piemonte_v2/DigiCertGlobalRootCA.crt.pem'
+
+CERT_PATH = os.getenv('CERT_PATH')
 
 DATABASES = {
     'default': {
