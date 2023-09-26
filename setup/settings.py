@@ -36,6 +36,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = str(os.getenv('DJANGO_ALLOWED_HOSTS','127.0.0.1')).split(',')
 
+CORS_ALLOWED_ORIGINS = str(os.getenv('DJANGO_ALLOWED_HOSTS')).split(',')
+
+
 
 # Application definition
 
@@ -49,7 +52,8 @@ INSTALLED_APPS = [
     'piemonte.apps.PiemonteConfig',
     'phonenumber_field',
     'widget_tweaks',
-    'storages'
+    'storages',
+    'corsheaders'
 ]
 
 MIDDLEWARE = [
@@ -60,6 +64,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommomMiddleware'
 ]
 
 ROOT_URLCONF = 'setup.urls'
