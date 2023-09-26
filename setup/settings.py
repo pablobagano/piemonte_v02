@@ -36,8 +36,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = str(os.getenv('DJANGO_ALLOWED_HOSTS','127.0.0.1')).split(',')
 
-CORS_ALLOWED_ORIGINS = str(os.getenv('DJANGO_ALLOWED_HOSTS')).split(',')
-
+CORS_ALLOWED_ORIGINS = ['http://sitepiemonte.azurewebsites.net','http://piemontecred.com.br']
 
 
 # Application definition
@@ -64,8 +63,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
-    'django.middleware.common.CommomMiddleware'
+    'corsheaders.middleware.CorsMiddleware'
 ]
 
 ROOT_URLCONF = 'setup.urls'
