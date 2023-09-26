@@ -36,7 +36,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = str(os.getenv('DJANGO_ALLOWED_HOSTS','127.0.0.1')).split(',')
 
-CORS_ALLOWED_ORIGINS = ['http://sitepiemonte.azurewebsites.net','http://piemontecred.com.br']
+CORS_ALLOWED_ORIGINS = ['https://sitepiemonte.azurewebsites.net','https://piemontecred.com.br']
 
 
 # Application definition
