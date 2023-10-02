@@ -40,7 +40,11 @@ CORS_ALLOWED_ORIGINS = ['https://sitepiemonte.azurewebsites.net','https://piemon
 
 # Security Settings
 CSRF_COOKIE_SECURE = True
-CSRF_TRUSTED_ORIGINS = ['https://sitepiemonte.azurewebsites.net','https://piemontecred.com.br']
+CSRF_TRUSTED_ORIGINS = [
+    'https://sitepiemonte.azurewebsites.net',
+    'https://piemontecred.com.br',
+    'https://www.piemontecred.com.br'  # Corrected the typo here
+]
 
 # Application definition
 
