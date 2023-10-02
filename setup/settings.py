@@ -39,6 +39,9 @@ ALLOWED_HOSTS = str(os.getenv('DJANGO_ALLOWED_HOSTS','127.0.0.1')).split(',')
 CORS_ALLOWED_ORIGINS = ['https://sitepiemonte.azurewebsites.net','https://piemontecred.com.br', 'https://www.piemontecred.com.br']
 
 # Security Settings
+SECURE_SSL_REDIRECT = True
+SESSION_COOKIE_SECURE = True
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 CSRF_COOKIE_SECURE = True
 CSRF_TRUSTED_ORIGINS = [
     'https://sitepiemonte.azurewebsites.net',
